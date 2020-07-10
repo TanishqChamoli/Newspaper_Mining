@@ -1,7 +1,7 @@
 counter = 0
 ls = []
-guess = "india"
 # a list of keywords
+gs = ["covid19","corona","pandemeic","coronawarriors","india","china"]
 replace = ", . - ' ; : / ™ [ ] { } ( ) * - + & ! @ # $ % ^ _ = ` ~"
 i = 0
 max1 = 11
@@ -25,10 +25,10 @@ with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as t:
 										# print('g')
 										word = word.replace(x,"")
 								# print(word)
-								# outer loop for loop for x in guess:
-								if word.lower() == guess:
-									# print(word)
-									counter+=1
+								# for multiple words or hot keywords
+								for c in gs:
+									if c == word.lower():
+										counter +=1
 							except:
 								pass
 				print(counter)

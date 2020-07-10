@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import os
 
-# In this we are supposed to redo this after sometime as the link chnages a lot.
+# In this we are supposed to redo this after sometime as the link changes a lot.
 
 if __name__ == "__main__":
     link_counter = 0
