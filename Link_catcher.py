@@ -32,11 +32,22 @@ if __name__ == "__main__":
                 r = soup.find('iframe')
                 r = r['src']
                 ans =r.split('?')[0]
-                print(ans)
-                count +=1
-                print("Saving--> {}".format(count))
-                f.write(ans)
-                f.write("\n")
+                # whole download-->
+                # print(ans)
+                # count +=1
+                # print("Saving--> {}".format(count))
+                # f.write(ans)
+                # f.write("\n")
+                # the condition for specific months can be stated in this
+                # example of the tye of months is specified below:
+                if "_Jul_" in ans or "_April_" in ans:
+                    print(ans)
+                    count +=1
+                    print("Saving--> {}".format(count))
+                    f.write(ans)
+                    f.write("\n")
+                else:
+                    print('Passed--<')
             except:
                 print('Passed--<')
                 pass

@@ -1,12 +1,12 @@
 import wget
 import os.path
-	    # TODO --                               DONE
-	    # Critcal----> Add a checker that will get the file if it is already present
-	    # in the directory then it will just leave the file
+
 # we are just using the basic command of linux for the exploitation of downloading the files
+
 if __name__ == "__main__":
 	counter = 0
-	download = 12
+	# to be changed as per the user
+	download = 33
 	# files from which we have to read the links and download the data
 	with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as f:
 	    x = f.read()

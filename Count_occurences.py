@@ -1,9 +1,9 @@
 counter = 0
 ls = []
 guess = "india"
-# a list of keywords
 replace = ", . - ' ; : / ™ [ ] { } ( ) * - + & ! @ # $ % ^ _ = ` ~"
 i = 0
+# change the value of this variable with the number of files that have been parsed
 max1 = 11
 with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as t:
 	x = t.read()
@@ -13,7 +13,8 @@ with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as t:
 			link = link.split("/")[-1]
 			print(link)
 			try:
-				with open("C:/Users/LENOVO/Desktop/Internship/Newpaper_Cleaned/"+link+'.txt','rb') as f:
+				# with open("C:/Users/LENOVO/Desktop/Internship/Newpaper_Cleaned/"+link+'.txt','rb') as f:
+				with open("C:/Users/LENOVO/Desktop/Internship/Better_cleaned/"+link+'.txt','rb') as f:
 					for line in f:
 						line = line.lower()
 						for word in line.split():
