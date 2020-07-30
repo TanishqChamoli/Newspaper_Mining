@@ -1,7 +1,7 @@
 counter = 0
 ls = []
 rs = []
-guess = "india"
+guess = "pakistan"
 replace = ", . - ' ; : / ™ [ ] { } ( ) * - + & ! @ # $ % ^ _ = ` ~"
 i = 0
 # change the value of this variable with the number of files that have been parsed
@@ -15,7 +15,6 @@ with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as t:
 			link = link.split("/")[-1]
 			print(link)
 			try:
-				# with open("C:/Users/LENOVO/Desktop/Internship/Newpaper_Cleaned/"+link+'.txt','rb') as f:
 				with open("C:/Users/LENOVO/Desktop/Internship/Better_cleaned/"+link+'.txt','rb') as f:
 					number_pdf +=1
 					rs.append(number_pdf)
@@ -59,3 +58,6 @@ Data ={ 'Day_number':rs,'Occurences':ls}
 df = DataFrame(Data,columns=['Day_number','Occurences'])
 df.plot(x ='Day_number', y='Occurences', kind = 'line')
 plt.show()
+
+
+# convert file to excel thne to csv for R

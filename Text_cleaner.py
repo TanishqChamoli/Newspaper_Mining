@@ -5,7 +5,7 @@ replace = ", ‚ ' ; : / ™ [ ] { } ( ) * - + & ! @ # $ % ^ _ = ` ‘ “ ~"
 if __name__ == "__main__":
 	i = 0
 	# change the value of this variable with the number of files that have been parsed
-	max1 = 43
+	max1 = 80
 	with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as t:
 		x = t.read()
 		for link in x.split():

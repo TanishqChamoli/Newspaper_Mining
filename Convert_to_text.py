@@ -2,7 +2,7 @@ import PyPDF2
 import os.path
 
 loop = 0
-dowloaded = 43
+dowloaded = 30
 with open("To_download_links.txt","r") as p:
 	# this will read the file names by exracting the last parts of the file and we will be able to get the files easily
 	x = p.read()
@@ -41,5 +41,5 @@ with open("To_download_links.txt","r") as p:
 					f.close()
 					pdfFileObj.close()
 			except:
-				print("File not found!! ----------------------------------------------")
+				print("File not found!!")
 

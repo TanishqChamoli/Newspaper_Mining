@@ -6,7 +6,7 @@ import os.path
 if __name__ == "__main__":
 	counter = 0
 	# to be changed as per the user
-	download = 33
+	download = 46
 	# files from which we have to read the links and download the data
 	with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as f:
 	    x = f.read()

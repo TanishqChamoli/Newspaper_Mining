@@ -24,6 +24,7 @@ if __name__ == "__main__":
     count = 0
     # now saving or updating the links we have found from the site
     with open("To_download_links.txt",'w') as f:
+    # with open("Combined.txt",'w') as f:
         for link in l:
             try:
                 # as we have to go onle more level to find the exact pdf file so in the below given code we are just doing the same stuff
@@ -40,7 +41,7 @@ if __name__ == "__main__":
                 # f.write("\n")
                 # the condition for specific months can be stated in this
                 # example of the tye of months is specified below:
-                if "_Jul_" in ans or "_April_" in ans:
+                if "_Jul_" in ans or "_April_" in ans or "_March_" in ans:
                     print(ans)
                     count +=1
                     print("Saving--> {}".format(count))
@@ -51,4 +52,3 @@ if __name__ == "__main__":
             except:
                 print('Passed--<')
                 pass
-

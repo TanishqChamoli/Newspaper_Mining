@@ -2,16 +2,16 @@ counter = 0
 ls = []
 rs = []
 lines = []
-guess = " india "
+guess = " trump "
 # a list of keywords
-gs = [" covid19 "," corona "," pandemeic "," coronawarriors ",
+gs = [" covid19 "," corona "," pandemic "," coronawarriors ", " mask ", " sanitation "," covid "," ppe ",
 	" incubation period ", " community spread ", " n95 ", " quarantine " ," isolation ",
-	" epidemic "," flattenig the curve "," comorbidity "," social distancing "," hydroxychloroquine ",
-	" aarogya setu app "," lockdown "," lockdown extension"," virus "," infection "," airborn "," cough "," fever ", " positive "]
+	" epidemic "," flattening the curve "," comorbidity "," social distancing "," hydroxychloroquine ",
+	" aarogya setu app "," lockdown "," lockdown extension"," virus "," infection "," airborne "," cough "," fever ", " positive "]
 replace = ", ‚ . - ' ; : / ™ [ ] { } ( ) * - + & ! @ # $ % ^ _ = ` ‘ “ ~"
 i = 0
 # change the value of this variable with the number of files that have been parsed
-max1 = 43
+max1 = 100
 number_pdf = 0
 with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as t:
 	x = t.read()

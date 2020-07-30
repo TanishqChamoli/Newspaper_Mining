@@ -56,6 +56,13 @@ with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as t:
 print(ls)
 ls.reverse()
 print(ls,rs)
+
+# ls_all = rs_all = 0
+# for i,j in ls,rs:
+# 	ls_all+=i
+# 	rs_all+=j
+# print((ls_all/rs_all)*100)
+
 # this is the graph plotting section of the code
 from pandas import DataFrame
 import matplotlib.pyplot as plt
