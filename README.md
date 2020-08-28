@@ -1,4 +1,4 @@
-# Newpaper_Mining
+# Newspaper_Mining
 Run the Link catcher first so that the files can be updated and we get the new links to download files
 
 
