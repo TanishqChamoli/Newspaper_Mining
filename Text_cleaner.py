@@ -6,7 +6,7 @@ if __name__ == "__main__":
 	i = 0
 	# change the value of this variable with the number of files that have been parsed
 	max1 = 80
-	with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as t:
+	with open("./To_download_links.txt",'r') as t:
 		x = t.read()
 		for link in x.split():
 			if i < max1: 
@@ -16,12 +16,12 @@ if __name__ == "__main__":
 				try:
 					s = 0
 					# print(link)
-					if os.path.isfile("C:/Users/LENOVO/Desktop/Internship/Better_cleaned/"+link+'.txt'):
+					if os.path.isfile("./Better_cleaned/"+link+'.txt'):
 						print("The file has already been parsed")
 						print()
 
 					else:
-						with open('C:/Users/LENOVO/Desktop/Internship/Newpaper_Cleaned/'+link+'.txt','rb') as f:
+						with open('./Newpaper_Cleaned/'+link+'.txt','rb') as f:
 							x = f.read()
 							x = x.decode("utf-8")
 							t = str(x)
@@ -30,7 +30,7 @@ if __name__ == "__main__":
 							t = t.replace("\n"," ")
 							t = t.replace("-","")
 							s = t
-						with open('C:/Users/LENOVO/Desktop/Internship/Better_cleaned/'+link+'.txt','wb') as f:
+						with open('./Better_cleaned/'+link+'.txt','wb') as f:
 							f.write(s.encode("utf-8"))
 						f.close()
 				except:

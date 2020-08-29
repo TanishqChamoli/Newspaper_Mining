@@ -1,5 +1,9 @@
 import re
-with open("Combined.txt",'r') as f:
+
+# for this we need to have file called combined.txt which will have all the links from which we
+# need to extract thedata from.
+
+with open("./Combined.txt",'r') as f:
 	x = f.read()
 	x = x.split()
 	for link in x:

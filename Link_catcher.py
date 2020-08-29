@@ -23,7 +23,7 @@ if __name__ == "__main__":
     		pass
     count = 0
     # now saving or updating the links we have found from the site
-    with open("To_download_links.txt",'w') as f:
+    with open("./To_download_links.txt",'w') as f:
     # with open("Combined.txt",'w') as f:
         for link in l:
             try:

@@ -13,16 +13,16 @@ with open("To_download_links.txt","r") as p:
 			link = link.split("/")[-1]
 			file_name = link
 			try:
-				if os.path.isfile("C:/Users/LENOVO/Desktop/Internship/Newpaper_Cleaned/"+file_name+'.txt'):
+				if os.path.isfile("./Newpaper_Cleaned/"+file_name+'.txt'):
 					print("The file has already been parsed")
 				else:
 					# the pdf reader is being used in this
-					pdfFileObj = open("C:/Users/LENOVO/Desktop/Internship/Newspaper_PDF/" + file_name, 'rb')
+					pdfFileObj = open("./Newspaper_PDF/" + file_name, 'rb')
 					# the object is assigned to the reader
 					pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
 					# print(pageObj.extractText())
 					# making a file with the same name of the file
-					with open("C:/Users/LENOVO/Desktop/Internship/Newpaper_Cleaned/" + file_name + '.txt','wb') as f:
+					with open("./Newpaper_Cleaned/" + file_name + '.txt','wb') as f:
 						# the pages are being traversed
 						for page_num in range(pdfReader.getNumPages()):
 							pageObj = pdfReader.getPage(page_num)

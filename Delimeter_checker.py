@@ -13,7 +13,7 @@ i = 0
 # change the value of this variable with the number of files that have been parsed
 max1 = 100
 number_pdf = 0
-with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as t:
+with open("./To_download_links.txt",'r') as t:
 	x = t.read()
 	for link in x.split():
 		if i < max1: 
@@ -23,7 +23,7 @@ with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as t:
 			try:
 				# with open("C:/Users/LENOVO/Desktop/Internship/Newpaper_Cleaned/"+link+'.txt','rb') as f:
 				# we have made a new cleaned file using the Text_cleaner program
-				with open("C:/Users/LENOVO/Desktop/Internship/Better_cleaned/"+link+'.txt','rb') as f:
+				with open("./Better_cleaned/"+link+'.txt','rb') as f:
 					size = 0
 					rs.append(number_pdf)
 					number_pdf +=1
@@ -66,9 +66,6 @@ with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as t:
 				counter = 0
 			except:
 				pass
-
-# for i in range(max1):
-# 	print(ls[i]/lines[i]*100)
 print(ls)
 print(lines)
 ls.reverse()

@@ -3,16 +3,16 @@ stop_words = "i me my myself we our ours ourselves you your yours yourself yours
 ls = []
 rs = []
 # a list of keywords
-gs = ["covid19","corona","pandemeic","coronawarriors",
+gs = ["covid19","corona","pandemic","coronawarriors",
        "incubation period", "community spread", "n95", "quarantine " ,"isolation",
        "epidemic","flattenig the curve","comorbidity","social distancing","hydroxychloroquine",
        "aarogya setu app","lockdown","lockdown extensio","virus","infection","airborn","cough","fever","masks","mask"]
 replace = ", . - ' ; : / ™ [ ] { } ( ) * - + & ! @ # $ % ^ _ = ` ~"
 i = 0
 # change the value of this variable with the number of files that have been parsed
-max1 = 43
+max1 = 100
 number_pdf = 0
-with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as t:
+with open("./To_download_links.txt",'r') as t:
 	x = t.read()
 	for link in x.split():
 		if i < max1: 
@@ -20,8 +20,8 @@ with open("C:/Users/LENOVO/Desktop/Internship/To_download_links.txt",'r') as t:
 			link = link.split("/")[-1]
 			print(link)
 			try:
-				# with open("C:/Users/LENOVO/Desktop/Internship/Newpaper_Cleaned/"+link+'.txt','rb') as f:
-				with open("C:/Users/LENOVO/Desktop/Internship/Better_cleaned/"+link+'.txt','rb') as f:
+				# with open("./Newpaper_Cleaned/"+link+'.txt','rb') as f:
+				with open("./Better_cleaned/"+link+'.txt','rb') as f:
 					rs.append(number_pdf)
 					number_pdf +=1
 					total_words = 0
