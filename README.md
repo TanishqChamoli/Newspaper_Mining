@@ -1,4 +1,4 @@
-# Newspaper_Mining
+# Newspaper Mining
 
     This project aims at first collecting data through web scraping.The files are downloaded using
     the wget module which refers to the API links stored in text files. Data is cleaned to bring 
