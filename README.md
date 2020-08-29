@@ -1,43 +1,86 @@
 # Newspaper_Mining
-Run the Link catcher first so that the files can be updated and we get the new links to download files
+
+    This project aims at first collecting data through web scraping.The files are downloaded using
+    the wget module which refers to the API links stored in text files. Data is cleaned to bring 
+    efficiency in the data for better results.The text files thus obtained are free from UTF-8
+    characters and contains simple text. These cleaned files are sent for data processing.The
+    total number of words and sentences related to COVID-19 are evaluated from the total number
+    of words and sentences respectively from every single newspaper.The percentage of total words
+    and sentences are calculated which gives a proper understanding of rising and declining
+    COVID-19 related articles.The data is visualized in the form of graphs to understand trends,
+    outliers, and patterns.
 
 
-Next step would be download the files by running the Download file code
+This is a project which will make it easy for people so they can find out the graphs and data
+of the occurences in newspapers. Our motive for this program was simple and straight forward
+i.e to extract the data from the pdfs into a text file and then being able to use that data as
+many times we want for the analysis. So the program was made to do this task.
 
 
-Next will be the conversion of the text by running the Convert_to_text.py
+We noticed that some newspapers dont support the pdf to text converions and give us incomplete
+data so for those cases we have also provided the OCR converter for the pdf to text using text
+from image recognition.
 
 
-The new step after the new commit is to clean the text and store it
+# NOTE
+
+    We have made a variable in every program which will contain the value of the pdfs which you have downloaded
+    PLEASE CHANGE IT WHEN YOU HAVE DOWNLOADED MORE FILES OR EVEN WHEN YOU HAVE CLEANED MORE FILES!
+    So please make sure to change the value of the variable called "downloaded" and "max1"
+    We will suggest that you keep our directory structure so that you dont have to change anything in the code
+    and would be able to straight away start using it.
+    Thank you!
+
+# Convesions Supported:
+
+    - Ocr_conversion using pdf2image and pytesseract library and PIL
+
+    - Converting PDF to text using Pdf2Text library
 
 
-and the last step is to run the desired program accordingly.
+# Downloding the Dataset:
 
 
-CHANGES:
+As we have already provided a rar file which has the cleaned data from the newspaper
+"THE HINDU" from March to June so you can extract the dataset and directly run the
+programs for the searching of the words.
+
+Else we have also provided our own link catcher and downloader:
+
+# Steps to follow:
+      
+      Run the Link_catcher.py and wait for it to complete
+      
+      Then run the Download_files.py which will use the links catched by the
+      above program and then use the wget function to download the files.
+
+# Programs to run on the Dataset:
 
 
-New changes in the code->
+- Count_occurences.py and Count_occurences_multiple.py for finding a single word or having a set of words respectively 
 
-Major improvement is the new way of cleaning the texts and the update in the download_files.py
-we have to change the values of max1 and download variables so that we can understand it
-total no of words with sentences ---done
+- Delimeter_checker.py for findind the number of sentences which contain our word or set of words provided to the program by us in the code.
 
-
-cleaned the text --done
+- Bad_word_removal.py is the one which removes the words which are commonly used in the sentance just to add meaning to it and gives us a better number.
 
 
-made the changes and changed the values as well --done
+# Folder Structer:
 
+    --FOLDER HAVING THE CODE
+    Folders to creat inside the above one ->
+    -- --Combined_Dataset
+    -- --Newspaper_Cleaned
+    -- --Nespaper_PDF
+    -- --Better_cleaned
+    And then paste our code in it.
+    -- --OUR CODE FROM GITHUB
+    
+# Authors
+Tanishq Chamoli
 
-made changes in the link_catcher to accompany the specific download months --done
+Sonam Garg
 
+Shriya Verma
 
-Add a checker that will get the file if it is already present in the directory then it will
-just leave the file -- done
-
-
-Additional Funtion->
-
-Graph Plotter in every program to help us visualise the results as well.
-
+# Mentor-
+Dr.Ankit Gupta
