@@ -78,9 +78,15 @@ Else we have also provided our own link catcher and downloader:
 # Authors
 Tanishq Chamoli
 
+https://github.com/TanishqChamoli
+
 Sonam Garg
 
+https://github.com/CO18350
+
 Shriya Verma
+
+https://github.com/CO18347
 
 # Mentor-
 Dr.Ankit Gupta
